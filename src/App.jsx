@@ -31,7 +31,7 @@ function App() {
     }
   };
 
-  useEffect(() => fetchData, []);
+  useEffect(() => fetchData(), []);
 
   if (isLoading) {
     return <Loader />;
