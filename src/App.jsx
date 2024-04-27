@@ -20,7 +20,7 @@ function App() {
   const fetchData = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(url);
+      const response = await axios(url);
       const tour = await response.json()
       setTours(tour)
       setIsLoading(false);
